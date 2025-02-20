@@ -35,3 +35,4 @@ famillyElement.oninput = () => {
   const famillyValue = famillyElement.value;
   headingElement.style.fontFamily=famillyValue
 }
+
