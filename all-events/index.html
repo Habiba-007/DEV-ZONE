@@ -1,24 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dev-Zone Class-4</title>
+  <!-- tailwind-link  -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- css link  -->
   <link rel="stylesheet" href="/all-events/index.css">
 </head>
+
 <body class="middle">
-  
-<div class="box">
+
+  <!-- <div class="box">
   <h1></h1>
   <hr>
   <input id="inputing" type="color" placeholder="Name">
   <button id="clicks">Clicking</button>
-  <!-- <br>
-  <hr> -->
-  <!-- <h1></h1> -->
-</div>
+  <br>
+  <hr>
+</div> -->
+  <!-- <div class=" h-[100px] w-[300px] border-2 mx-auto mt-20 font-bold shadow-xl container bg-green-300">
+  <h1 class="bg-red-100 flex justify-center items-center absolute ml-20 text-xl w-16 px-10 mt-2">Title</h1>
+  <input class=" position   mt-10 mx-20 border-2 border-orange-300" type="text" placeholder="name" id=""> 
+</div> -->
 
+  <main class="container border-2 border-red-500 my-10 mx-auto ">
+    <!-- parent-dv  -->
+    <div
+      class="grid md:grid-cols-2 lg:grid-cols-3 justify-center aligns-center mb-20 shadow-2xl border-4 h-96 overflow-hidden ">
+      <p class="bg-green-500 inline-block absolute mt-12   px-10 font-bold ml-56 rounded ">Title</p>
+
+      <!-- 1st-box   -->
+      <div class="border-2 w-96 h-auto mt-10 mx-auto position border-pink-500 bg-violet-200">
+        <input class=" border-2 border-orange-300 mb-20 flex mx-auto px-3 py-2 mt-10" type="text" placeholder="name"
+          id="title">
+          
+        <!-- 3rd-box select tag-->
+        <div class="  -ml-3   -my-20 ">
+          <select class="bg-slate-500  mx-20 px-20 py-2 rounded flex text-center font-bold" name="" id="align_input">
+            <option class="font-bold text-yellow-900" value="left">left</option>
+            <option class="font-bold text-orange-900" value="center">center</option>
+            <option class="font-bold text-red-900" value="right">right</option>
+          </select>
+        </div>
+
+        <!-- 4th-box  -->
+        <div class="mt-20 mx-16">
+         <span class="text-xl font-bold">font-size</span>
+         <!-- 5th-Box span-tag(16px) -->
+          <span class="font-bold ml-10" id="px">16px</span>
+          <input class="flex" type="range" id="fs" step="1" value="16" min="16" max="100">
+        </div>
+        
+        <!-- 6th-font-family-control (with select tag) -->
+        <div class="mt-2">
+          <select class="bg-slate-500  mx-20 px-10 py-2 rounded flex text-center font-bold ml-16 z-30" name="" id="fontFamilly">
+            <option class="font-bold text-yellow-900" value="Fira Code">FIra Code</option>
+            <option class="font-bold text-orange-900" value="MonoLisa">MonoLisa</option>
+            <option class="font-bold text-red-900" value="Menlo">Menlo</option>
+            <option class="font-bold text-red-900" value="Operator Mono">Operator Mono</option>
+            <option class="font-bold text-red-900" value="Dank Mono">Dank Mono</option>
+          </select>
+        </div>
+
+      </div>
+
+      <!-- 2nd-box -->
+      <div
+        class="  border-yellow-500 mb-6 mx-auto mt-10 w-96 h-[200px] shadow-2xl bg-green-400 overflow-hidden overflow-y-scroll">
+        <h1 id="heading" class="font-bold bg-red-200 mt-10  p-24"></h1>
+      </div>
+
+    </div>
+
+  </main>
 
   <script src="/all-events/elementor.js"></script>
 </body>
+
 </html>
