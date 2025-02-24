@@ -4,7 +4,10 @@ const align = document.getElementById('align_input');
 const fsElement = document.getElementById('fs');
 const pxElement = document.getElementById('px')
 const famillyElement=document.getElementById('fontFamilly')
+// create-font-color 
+const fontColoring=document.getElementById('fontColor')
 
+// use input tag for input value-> part-1
 inputElement.onkeyup = () => {
   let inputValue = inputElement.value;
   headingElement.innerHTML = inputValue;
@@ -15,13 +18,13 @@ inputElement.onkeyup = () => {
 // }
 
 
-// catch the select tag =>
+// catch the select tag =>for input value align->part-2
 align.onchange = () => {
   const alignValue = align.value;
   headingElement.style.textAlign = alignValue;
 }
 
-// now catch the font-size input tag (instant change means oninput-event fire hobe)
+// now catch the font-size use input tag (instant change font-size, means oninput-event fire hobe)
 fsElement.oninput = () => {
   const fontInput = fsElement.value;
   headingElement.style.fontSize = fontInput + "px"
@@ -36,3 +39,9 @@ famillyElement.oninput = () => {
   headingElement.style.fontFamily=famillyValue
 }
 
+// now want change to values font-color or fonts background color=>
+ fontColoring.oninput=()=>{
+  const colorValue=fontColoring.value;
+  headingElement.style.backgroundColor=colorValue;
+ }
+ 

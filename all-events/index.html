@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dev-Zone Class-4</title>
-  <!-- tailwind-link  -->
+  <!-- tailwind-link use with CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- css link  -->
   <link rel="stylesheet" href="/all-events/index.css">
@@ -37,7 +37,7 @@
         <input class=" border-2 border-orange-300 mb-20 flex mx-auto px-3 py-2 mt-10" type="text" placeholder="name"
           id="title">
           
-        <!-- 3rd-box select tag-->
+        <!-- 3rd-box select tag use value align-->
         <div class="  -ml-3   -my-20 ">
           <select class="bg-slate-500  mx-20 px-20 py-2 rounded flex text-center font-bold" name="" id="align_input">
             <option class="font-bold text-yellow-900" value="left">left</option>
@@ -46,11 +46,12 @@
           </select>
         </div>
 
-        <!-- 4th-box  -->
+        <!-- 4th-box for change font-size big,small,medium -->
         <div class="mt-20 mx-16">
          <span class="text-xl font-bold">font-size</span>
          <!-- 5th-Box span-tag(16px) -->
           <span class="font-bold ml-10" id="px">16px</span>
+          <!-- 4th box use id=fs for value font-size big,medium,small modifyed  -->
           <input class="flex" type="range" id="fs" step="1" value="16" min="16" max="100">
         </div>
         
@@ -65,18 +66,29 @@
           </select>
         </div>
 
+          <!-- =>font-color creator=> -->
+        <div class="px-16  text-red-900 font-bold mt-1">
+          <select name="" id="fontColor" class="bg-slate-500  rounded text-center  px-10">
+            <option value="red" class="font-bold">Red</option>
+            <option value="yellow" class="font-bold">Yellow</option>
+            <option value="orange" class="font-bold">Orange</option>
+            <option value="tomato" class="font-bold">Tomato</option>
+          </select>
+        </div> 
+
       </div>
 
-      <!-- 2nd-box -->
-      <div
-        class="  border-yellow-500 mb-6 mx-auto mt-10 w-96 h-[200px] shadow-2xl bg-green-400 overflow-hidden overflow-y-scroll">
-        <h1 id="heading" class="font-bold bg-red-200 mt-10  p-24"></h1>
+      <!-- 2nd-box (h1 elemtn-value)right side-->
+      <div class="border-yellow-500 mb-6 mx-auto mt-10 w-96 h-[200px] shadow-2xl bg-green-400 overflow-hidden overflow-y-scroll" >
+        <h1 id="heading" class="font-bold bg-red-200 mt-10  p-24">
+          <!-- html value is here and its connect to input tag,font-size-tag,font-familly-tag,text-align-tag,font-background-color-tag etc. -->
+        </h1>
       </div>
-
+      <!-- end down parent tag  -->
     </div>
 
   </main>
-
+   
   <script src="/all-events/elementor.js"></script>
 </body>
 
